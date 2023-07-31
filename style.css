@@ -20,3 +20,128 @@ html{
     font-size: 62.5%;
     font-family: 'Rubik', sans-serif;
 }
+
+main{
+    background-color: var(--light-gray);
+    min-height: 100vh;
+}
+
+.container{
+    padding: 30px 0;
+    width: 91%;
+    margin: 0 auto;
+}
+.comment{
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+.comment-top{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+.comment-top img{
+    width: 32px;
+}
+.comment-top h2{
+    color: var(--dark-blue);
+    font-size: 1.6rem;
+}
+.comment-top span{
+    color: var(--grayish-blue);
+    font-size: 1.5rem;
+}
+.comment p{
+    color: var(--grayish-blue);
+    font-size: 1.5rem;
+    padding: 15px 0;
+    line-height: 2.3rem;
+}
+.comment #user-reply{
+    color: var(--moderate-blue);
+    font-weight: 700;
+}
+.comment-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.comment-score{
+    display: flex;
+    align-items: center;
+    background-color: var(--very-light-gray);
+    padding: 10px 12px;
+    height: 40px;
+    border-radius: 8px;
+    gap: 15px;
+}
+.comment-score img{
+    width: 12px;
+}
+.comment-score p{
+    color: var(--moderate-blue);
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 0;
+}
+.comment-reply{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 10px;
+}
+.comment-reply img{
+    width: 15px;
+    height: 15px;
+}
+.comment-reply p{
+    color: var(--moderate-blue);
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 0;
+}
+.commentReply-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+.commentReply{
+    width: 94%;
+}
+/* .commentReply .comment{
+    width: 94%;
+} */
+.commentReply-container::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    left: 0;
+    background-color: hsla(211, 10%, 45%,0.2);
+}
+/* REPLY */
+.reply{
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+.reply textarea{
+    width: 100%;
+    height: 100px;
+    border: none;
+    border: 2px solid var(--light-gray);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+/* INACTIVE */
+.inactive{
+    display: none;
+}
